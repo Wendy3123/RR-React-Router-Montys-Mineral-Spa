@@ -27,20 +27,21 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about-US">About</Link>
               </li>
               <li>
-                <Link to="/packages">Our Packages</Link>
+                <Link to="/our-packages">Our Packages</Link>
               </li>
             </ul>
           </div>
         </header>
         <div className="display">
+          {/* THE LINK TO ABOVE NEEDS TO BE LINKED TO THE SAME NAME AS THE PATH IN OUR ROUTE OR IT WONT WORK */}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about-US" element={<About />} />
             <Route
-              path="/packages"
+              path="/our-packages"
               element={<Packages packages={packages} />}
             />
           </Routes>
